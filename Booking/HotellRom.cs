@@ -7,11 +7,12 @@ using System.Windows.Forms;
 
 namespace Booking
 {
-    class HotellRom : Panel
+    class HotellRom : Label
     {
         public int      romNummer;
         public string   GjesteNavn;
         public bool     opptatt;
-
+        public string   innsjekkDato;
+        public string   utsjekkdato;
     }
 }
