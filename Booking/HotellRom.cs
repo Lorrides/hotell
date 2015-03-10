@@ -14,5 +14,11 @@ namespace Booking
         public bool     opptatt;
         public string   innsjekkDato;
         public string   utsjekkdato;
+
+        public HotellRom(int romNummer)
+        {
+            opptatt = "False";
+            romNummer = this.romNummer;
+        }       
     }
 }
