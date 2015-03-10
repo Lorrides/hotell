@@ -17,7 +17,7 @@ namespace Booking
 
         public HotellRom(int romNummer)
         {
-            opptatt = "False";
+            opptatt = false;
             romNummer = this.romNummer;
         }       
     }
