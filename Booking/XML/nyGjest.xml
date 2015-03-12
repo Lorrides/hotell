@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!DOCTYPE gjester [
 <!ELEMENT gjester (gjest+)>
+
 <!ELEMENT gjest (gjestnavn)>
+
 <!ELEMENT gjestenavn (#PCDATA)>
+
 ]>
 <gjester>
   <gjest>
