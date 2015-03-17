@@ -44,18 +44,17 @@
             // 
             this.nameInputBox.Location = new System.Drawing.Point(12, 10);
             this.nameInputBox.Margin = new System.Windows.Forms.Padding(2);
-            this.nameInputBox.Multiline = true;
             this.nameInputBox.Name = "nameInputBox";
-            this.nameInputBox.Size = new System.Drawing.Size(207, 29);
+            this.nameInputBox.Size = new System.Drawing.Size(207, 20);
             this.nameInputBox.TabIndex = 1;
             // 
             // gjesteListe
             // 
             this.gjesteListe.FormattingEnabled = true;
-            this.gjesteListe.Location = new System.Drawing.Point(11, 84);
+            this.gjesteListe.Location = new System.Drawing.Point(11, 71);
             this.gjesteListe.Margin = new System.Windows.Forms.Padding(2);
             this.gjesteListe.Name = "gjesteListe";
-            this.gjesteListe.Size = new System.Drawing.Size(206, 238);
+            this.gjesteListe.Size = new System.Drawing.Size(206, 355);
             this.gjesteListe.TabIndex = 2;
             // 
             // bookingListe
@@ -80,7 +79,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(576, 544);
+            this.tabPage3.Size = new System.Drawing.Size(576, 559);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "3. etg";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -91,7 +90,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(576, 544);
+            this.tabPage2.Size = new System.Drawing.Size(576, 559);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "2. etg";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -121,9 +120,9 @@
             // 
             // leggTilNyGjest
             // 
-            this.leggTilNyGjest.Location = new System.Drawing.Point(12, 44);
+            this.leggTilNyGjest.Location = new System.Drawing.Point(12, 35);
             this.leggTilNyGjest.Name = "leggTilNyGjest";
-            this.leggTilNyGjest.Size = new System.Drawing.Size(200, 29);
+            this.leggTilNyGjest.Size = new System.Drawing.Size(207, 29);
             this.leggTilNyGjest.TabIndex = 7;
             this.leggTilNyGjest.Text = "Legg til ny gjest";
             this.leggTilNyGjest.UseVisualStyleBackColor = true;
