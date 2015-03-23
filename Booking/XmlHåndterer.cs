@@ -17,8 +17,8 @@ namespace Booking
                 doc.Root.Add(
                     new XElement("gjest",
                     new XElement("gjestenavn", gjesteNavn), 
-                    new XElement ("innSjekkDato", innsjekkDato),
-                    new XElement ("utSjekkDato", utsjekkDato)));
+                    new XElement ("innSjekkDato", innsjekkDato.ToShortDateString()),
+                    new XElement ("utSjekkDato", utsjekkDato.ToShortDateString())));
                 doc.Save("../../XML/nyGjest.XML");               
             }
             catch (Exception f)

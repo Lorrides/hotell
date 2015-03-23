@@ -33,4 +33,19 @@ Espen Moe</gjestenavn>
     <innSjekkDato>2015-03-23T12:30:36</innSjekkDato>
     <utSjekkDato>2015-03-23T12:30:36</utSjekkDato>
   </gjest>
+  <gjest>
+    <gjestenavn>Smergel Kjøttpølse</gjestenavn>
+    <innSjekkDato>2015-03-12T12:35:43</innSjekkDato>
+    <utSjekkDato>2015-03-29T12:35:43</utSjekkDato>
+  </gjest>
+  <gjest>
+    <gjestenavn>Ali Baba</gjestenavn>
+    <innSjekkDato>08.03.2015</innSjekkDato>
+    <utSjekkDato>15.03.2015</utSjekkDato>
+  </gjest>
+  <gjest>
+    <gjestenavn>Saddam Hussein</gjestenavn>
+    <innSjekkDato>11.03.2015 12:38:36</innSjekkDato>
+    <utSjekkDato>21.03.2015 12:38:36</utSjekkDato>
+  </gjest>
 </gjester>

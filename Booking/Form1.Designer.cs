@@ -126,6 +126,7 @@
             // 
             // innsjekkDatoVelger
             // 
+            this.innsjekkDatoVelger.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.innsjekkDatoVelger.Location = new System.Drawing.Point(11, 521);
             this.innsjekkDatoVelger.Name = "innsjekkDatoVelger";
             this.innsjekkDatoVelger.Size = new System.Drawing.Size(200, 20);
@@ -154,6 +155,7 @@
             // 
             // utsjekkDatoVelger
             // 
+            this.utsjekkDatoVelger.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.utsjekkDatoVelger.Location = new System.Drawing.Point(12, 571);
             this.utsjekkDatoVelger.Name = "utsjekkDatoVelger";
             this.utsjekkDatoVelger.Size = new System.Drawing.Size(200, 20);
