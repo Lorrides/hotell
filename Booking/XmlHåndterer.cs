@@ -9,7 +9,7 @@ namespace Booking
 {
     class XmlHåndterer
     {
-        public void leggTilNyGjest(string gjesteNavn)
+        public void leggTilNyGjest(string gjesteNavn, DateTime innsjekkDato, DateTime utsjekkDato)
         {
             try
             {
@@ -17,6 +17,8 @@ namespace Booking
                 doc.Root.Add(
                     new XElement("gjest",
                     new XElement("gjestenavn", gjesteNavn)));
+                    new XElement("innsjekkdato", innsjekkDato);
+                    new XElement("utsjekkdato", utsjekkDato);
                 doc.Save("../../XML/nyGjest.XML");               
             }
             catch (Exception f)

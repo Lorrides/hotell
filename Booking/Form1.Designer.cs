@@ -36,10 +36,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.leggTilNyGjest = new System.Windows.Forms.Button();
-            this.innSjekkDato = new System.Windows.Forms.DateTimePicker();
+            this.innsjekkDatoVelger = new System.Windows.Forms.DateTimePicker();
             this.innSjekkDatoLabel = new System.Windows.Forms.Label();
             this.utSjekkDatoLabel = new System.Windows.Forms.Label();
-            this.utSjekkDato = new System.Windows.Forms.DateTimePicker();
+            this.utsjekkDatoVelger = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,12 +124,13 @@
             this.leggTilNyGjest.UseVisualStyleBackColor = true;
             this.leggTilNyGjest.Click += new System.EventHandler(this.button1_Click);
             // 
-            // innSjekkDato
+            // innsjekkDatoVelger
             // 
-            this.innSjekkDato.Location = new System.Drawing.Point(11, 521);
-            this.innSjekkDato.Name = "innSjekkDato";
-            this.innSjekkDato.Size = new System.Drawing.Size(200, 20);
-            this.innSjekkDato.TabIndex = 8;
+            this.innsjekkDatoVelger.Location = new System.Drawing.Point(11, 521);
+            this.innsjekkDatoVelger.Name = "innsjekkDatoVelger";
+            this.innsjekkDatoVelger.Size = new System.Drawing.Size(200, 20);
+            this.innsjekkDatoVelger.TabIndex = 8;
+            this.innsjekkDatoVelger.ValueChanged += new System.EventHandler(this.innSjekkDato_ValueChanged);
             // 
             // innSjekkDatoLabel
             // 
@@ -137,9 +138,9 @@
             this.innSjekkDatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.innSjekkDatoLabel.Location = new System.Drawing.Point(27, 494);
             this.innSjekkDatoLabel.Name = "innSjekkDatoLabel";
-            this.innSjekkDatoLabel.Size = new System.Drawing.Size(159, 24);
+            this.innSjekkDatoLabel.Size = new System.Drawing.Size(154, 24);
             this.innSjekkDatoLabel.TabIndex = 9;
-            this.innSjekkDatoLabel.Text = "Innsjekkings dato:";
+            this.innSjekkDatoLabel.Text = "Innsjekkingsdato:";
             // 
             // utSjekkDatoLabel
             // 
@@ -147,26 +148,27 @@
             this.utSjekkDatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.utSjekkDatoLabel.Location = new System.Drawing.Point(27, 544);
             this.utSjekkDatoLabel.Name = "utSjekkDatoLabel";
-            this.utSjekkDatoLabel.Size = new System.Drawing.Size(150, 24);
+            this.utSjekkDatoLabel.Size = new System.Drawing.Size(145, 24);
             this.utSjekkDatoLabel.TabIndex = 10;
-            this.utSjekkDatoLabel.Text = "Utsjekkings dato:";
+            this.utSjekkDatoLabel.Text = "Utsjekkingsdato:";
             // 
-            // utSjekkDato
+            // utsjekkDatoVelger
             // 
-            this.utSjekkDato.Location = new System.Drawing.Point(12, 571);
-            this.utSjekkDato.Name = "utSjekkDato";
-            this.utSjekkDato.Size = new System.Drawing.Size(200, 20);
-            this.utSjekkDato.TabIndex = 11;
+            this.utsjekkDatoVelger.Location = new System.Drawing.Point(12, 571);
+            this.utsjekkDatoVelger.Name = "utsjekkDatoVelger";
+            this.utsjekkDatoVelger.Size = new System.Drawing.Size(200, 20);
+            this.utsjekkDatoVelger.TabIndex = 11;
+            this.utsjekkDatoVelger.ValueChanged += new System.EventHandler(this.utsjekkDatoVelger_ValueChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 606);
-            this.Controls.Add(this.utSjekkDato);
+            this.Controls.Add(this.utsjekkDatoVelger);
             this.Controls.Add(this.utSjekkDatoLabel);
             this.Controls.Add(this.innSjekkDatoLabel);
-            this.Controls.Add(this.innSjekkDato);
+            this.Controls.Add(this.innsjekkDatoVelger);
             this.Controls.Add(this.leggTilNyGjest);
             this.Controls.Add(this.bookingListe);
             this.Controls.Add(this.tabControl1);
@@ -191,10 +193,10 @@
         internal System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button leggTilNyGjest;
-        private System.Windows.Forms.DateTimePicker innSjekkDato;
+        private System.Windows.Forms.DateTimePicker innsjekkDatoVelger;
         private System.Windows.Forms.Label innSjekkDatoLabel;
         private System.Windows.Forms.Label utSjekkDatoLabel;
-        private System.Windows.Forms.DateTimePicker utSjekkDato;
+        private System.Windows.Forms.DateTimePicker utsjekkDatoVelger;
     }
 }
 

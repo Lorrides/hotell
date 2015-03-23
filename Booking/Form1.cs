@@ -18,6 +18,9 @@ namespace Booking
             InitializeComponent();
         }
 
+        private DateTime _innsjekkDato;
+        private DateTime _utsjekkDato;
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (nameInputBox.Text == "")
@@ -28,7 +31,7 @@ namespace Booking
             else {
                     gjesteListe.Items.Clear();
                     XmlHåndterer xh = new XmlHåndterer();
-                    xh.leggTilNyGjest(nameInputBox.Text);
+                    xh.leggTilNyGjest(nameInputBox.Text, _innsjekkDato, _utsjekkDato);
 
                     XDocument ListBoxOptions = XDocument.Load("../../XML/nyGjest.XML");
                     foreach (XElement element in ListBoxOptions.Root.Elements())
@@ -45,6 +48,16 @@ namespace Booking
                         }
                     }
             }
+        }
+
+        private void innSjekkDato_ValueChanged(object sender, EventArgs e)
+        {
+            _innsjekkDato = innsjekkDatoVelger.Value;
+        }
+
+        private void utsjekkDatoVelger_ValueChanged(object sender, EventArgs e)
+        {
+            _utsjekkDato = utsjekkDatoVelger.Value;
         }      
     }
 }

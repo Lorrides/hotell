@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!DOCTYPE gjester [
+<!--<!DOCTYPE gjester [
 <!ELEMENT gjester (gjest+)>
 
-<!ELEMENT gjest (gjestnavn)>
+<!ELEMENT gjest (gjestenavn)>
 
 <!ELEMENT gjestenavn (#PCDATA)>
 
-]>
+]> -->
 <gjester>
   <gjest>
     <gjestenavn>Espen Moe
@@ -14,5 +14,14 @@ Espen Moe</gjestenavn>
   </gjest>
   <gjest>
     <gjestenavn>Thor-Arne Høiland</gjestenavn>
+  </gjest>
+  <gjest>
+    <gjestenavn>Geir Grusom</gjestenavn>
+  </gjest>
+  <gjest>
+    <gjestenavn>Fjodor Dostojevski</gjestenavn>
+  </gjest>
+  <gjest>
+    <gjestenavn>Duste Mikkel</gjestenavn>
   </gjest>
 </gjester>
