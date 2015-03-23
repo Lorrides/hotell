@@ -48,4 +48,9 @@ Espen Moe</gjestenavn>
     <innSjekkDato>11.03.2015 12:38:36</innSjekkDato>
     <utSjekkDato>21.03.2015 12:38:36</utSjekkDato>
   </gjest>
+  <gjest>
+    <gjestenavn>kjdfdfg</gjestenavn>
+    <innSjekkDato>21.03.2015</innSjekkDato>
+    <utSjekkDato>29.03.2015</utSjekkDato>
+  </gjest>
 </gjester>
