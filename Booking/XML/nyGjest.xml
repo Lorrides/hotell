@@ -53,4 +53,9 @@ Espen Moe</gjestenavn>
     <innSjekkDato>21.03.2015</innSjekkDato>
     <utSjekkDato>29.03.2015</utSjekkDato>
   </gjest>
+  <gjest>
+    <gjestenavn>Marakov ko</gjestenavn>
+    <innSjekkDato>02/24/2015</innSjekkDato>
+    <utSjekkDato>03/26/2015</utSjekkDato>
+  </gjest>
 </gjester>
