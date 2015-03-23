@@ -19,9 +19,18 @@ Espen Moe</gjestenavn>
     <gjestenavn>Geir Grusom</gjestenavn>
   </gjest>
   <gjest>
-    <gjestenavn>Fjodor Dostojevski</gjestenavn>
+    <gjestenavn>Putin Ritz</gjestenavn>
+    <innSjekkDato>0001-01-01T00:00:00</innSjekkDato>
+    <utSjekkDato>0001-01-01T00:00:00</utSjekkDato>
   </gjest>
   <gjest>
-    <gjestenavn>Duste Mikkel</gjestenavn>
+    <gjestenavn>Thor Test</gjestenavn>
+    <innSjekkDato>0001-01-01T00:00:00</innSjekkDato>
+    <utSjekkDato>0001-01-01T00:00:00</utSjekkDato>
+  </gjest>
+  <gjest>
+    <gjestenavn>Thor Test</gjestenavn>
+    <innSjekkDato>2015-03-23T12:30:36</innSjekkDato>
+    <utSjekkDato>2015-03-23T12:30:36</utSjekkDato>
   </gjest>
 </gjester>
