@@ -31,12 +31,15 @@
             this.nameInputBox = new System.Windows.Forms.TextBox();
             this.gjesteListe = new System.Windows.Forms.ListBox();
             this.bookingListe = new System.Windows.Forms.ListBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.leggTilNyGjest = new System.Windows.Forms.Button();
+            this.innSjekkDato = new System.Windows.Forms.DateTimePicker();
+            this.innSjekkDatoLabel = new System.Windows.Forms.Label();
+            this.utSjekkDatoLabel = new System.Windows.Forms.Label();
+            this.utSjekkDato = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,13 +68,6 @@
             this.bookingListe.Name = "bookingListe";
             this.bookingListe.Size = new System.Drawing.Size(201, 576);
             this.bookingListe.TabIndex = 4;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(11, 433);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 6;
             // 
             // tabPage3
             // 
@@ -128,13 +124,50 @@
             this.leggTilNyGjest.UseVisualStyleBackColor = true;
             this.leggTilNyGjest.Click += new System.EventHandler(this.button1_Click);
             // 
+            // innSjekkDato
+            // 
+            this.innSjekkDato.Location = new System.Drawing.Point(11, 521);
+            this.innSjekkDato.Name = "innSjekkDato";
+            this.innSjekkDato.Size = new System.Drawing.Size(200, 20);
+            this.innSjekkDato.TabIndex = 8;
+            // 
+            // innSjekkDatoLabel
+            // 
+            this.innSjekkDatoLabel.AutoSize = true;
+            this.innSjekkDatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.innSjekkDatoLabel.Location = new System.Drawing.Point(27, 494);
+            this.innSjekkDatoLabel.Name = "innSjekkDatoLabel";
+            this.innSjekkDatoLabel.Size = new System.Drawing.Size(159, 24);
+            this.innSjekkDatoLabel.TabIndex = 9;
+            this.innSjekkDatoLabel.Text = "Innsjekkings dato:";
+            // 
+            // utSjekkDatoLabel
+            // 
+            this.utSjekkDatoLabel.AutoSize = true;
+            this.utSjekkDatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utSjekkDatoLabel.Location = new System.Drawing.Point(27, 544);
+            this.utSjekkDatoLabel.Name = "utSjekkDatoLabel";
+            this.utSjekkDatoLabel.Size = new System.Drawing.Size(150, 24);
+            this.utSjekkDatoLabel.TabIndex = 10;
+            this.utSjekkDatoLabel.Text = "Utsjekkings dato:";
+            // 
+            // utSjekkDato
+            // 
+            this.utSjekkDato.Location = new System.Drawing.Point(12, 571);
+            this.utSjekkDato.Name = "utSjekkDato";
+            this.utSjekkDato.Size = new System.Drawing.Size(200, 20);
+            this.utSjekkDato.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 606);
+            this.Controls.Add(this.utSjekkDato);
+            this.Controls.Add(this.utSjekkDatoLabel);
+            this.Controls.Add(this.innSjekkDatoLabel);
+            this.Controls.Add(this.innSjekkDato);
             this.Controls.Add(this.leggTilNyGjest);
-            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.bookingListe);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.gjesteListe);
@@ -153,12 +186,15 @@
         private System.Windows.Forms.TextBox nameInputBox;
         private System.Windows.Forms.ListBox gjesteListe;
         private System.Windows.Forms.ListBox bookingListe;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage2;
         internal System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button leggTilNyGjest;
+        private System.Windows.Forms.DateTimePicker innSjekkDato;
+        private System.Windows.Forms.Label innSjekkDatoLabel;
+        private System.Windows.Forms.Label utSjekkDatoLabel;
+        private System.Windows.Forms.DateTimePicker utSjekkDato;
     }
 }
 
