@@ -17,9 +17,9 @@ namespace Booking
                 XDocument doc = XDocument.Load("../../XML/nyGjest.XML");
                 doc.Root.Add(
                     new XElement("gjest",
-                    new XElement("gjestenavn", gjesteNavn), 
-                    new XElement ("innSjekkDato", innsjekkDato.ToShortDateString()),
-                    new XElement ("utSjekkDato", utsjekkDato.ToShortDateString())));
+                    new XElement("gjestenavn", gjesteNavn),
+                    new XElement("innSjekkDato", innsjekkDato.ToString("d", System.Globalization.CultureInfo.InvariantCulture)),
+                    new XElement("utSjekkDato", utsjekkDato.ToString("d", System.Globalization.CultureInfo.InvariantCulture))));
                 doc.Save("../../XML/nyGjest.XML");               
             }
             catch (Exception f)
@@ -28,7 +28,7 @@ namespace Booking
             }
         }
 
-        public void lesXML(ListBox gjesteListe)
+        public void oppdaterGjesteListeFraXML(ListBox gjesteListe)
         {
             XDocument ListBoxOptions = XDocument.Load("../../XML/nyGjest.XML");
             foreach (XElement element in ListBoxOptions.Root.Elements())
