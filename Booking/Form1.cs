@@ -16,6 +16,7 @@ namespace Booking
         public Form1()
         {
             InitializeComponent();
+            leseXML();
         }
 
         private DateTime _innsjekkDato;
@@ -33,20 +34,25 @@ namespace Booking
                     XmlHåndterer xh = new XmlHåndterer();
                     xh.leggTilNyGjest(nameInputBox.Text, _innsjekkDato, _utsjekkDato);
 
-                    XDocument ListBoxOptions = XDocument.Load("../../XML/nyGjest.XML");
-                    foreach (XElement element in ListBoxOptions.Root.Elements())
+                    leseXML();
+            }
+        }
+
+        private void leseXML()
+        {
+            XDocument ListBoxOptions = XDocument.Load("../../XML/nyGjest.XML");
+            foreach (XElement element in ListBoxOptions.Root.Elements())
+            {
+                if (element.Name.LocalName.Contains("gjest"))
+                {
+                    foreach (XElement subelement in element.Elements())
                     {
-                        if (element.Name.LocalName.Contains("gjest"))
+                        if (subelement.Name.LocalName.Contains("gjestenavn"))
                         {
-                            foreach (XElement subelement in element.Elements())
-                            {
-                                if (subelement.Name.LocalName.Contains("gjestenavn"))
-                                {
-                                    gjesteListe.Items.Add(element.Value.ToString());
-                                }
-                            }
+                            gjesteListe.Items.Add(element.Value.ToString());
                         }
                     }
+                }
             }
         }
 
