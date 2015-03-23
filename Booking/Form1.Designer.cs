@@ -31,16 +31,12 @@
             this.nameInputBox = new System.Windows.Forms.TextBox();
             this.gjesteListe = new System.Windows.Forms.ListBox();
             this.bookingListe = new System.Windows.Forms.ListBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.etasjeOversiktTabControl = new System.Windows.Forms.TabControl();
             this.leggTilNyGjest = new System.Windows.Forms.Button();
             this.innsjekkDatoVelger = new System.Windows.Forms.DateTimePicker();
             this.innSjekkDatoLabel = new System.Windows.Forms.Label();
             this.utSjekkDatoLabel = new System.Windows.Forms.Label();
             this.utsjekkDatoVelger = new System.Windows.Forms.DateTimePicker();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // nameInputBox
@@ -69,50 +65,14 @@
             this.bookingListe.Size = new System.Drawing.Size(201, 576);
             this.bookingListe.TabIndex = 4;
             // 
-            // tabPage3
+            // etasjeOversiktTabControl
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(576, 559);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "3. etg";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(576, 559);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "2. etg";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(428, 10);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(584, 585);
-            this.tabControl1.TabIndex = 3;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(576, 559);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "1. etg";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.etasjeOversiktTabControl.Location = new System.Drawing.Point(428, 10);
+            this.etasjeOversiktTabControl.Margin = new System.Windows.Forms.Padding(2);
+            this.etasjeOversiktTabControl.Name = "etasjeOversiktTabControl";
+            this.etasjeOversiktTabControl.SelectedIndex = 0;
+            this.etasjeOversiktTabControl.Size = new System.Drawing.Size(584, 585);
+            this.etasjeOversiktTabControl.TabIndex = 3;
             // 
             // leggTilNyGjest
             // 
@@ -173,13 +133,12 @@
             this.Controls.Add(this.innsjekkDatoVelger);
             this.Controls.Add(this.leggTilNyGjest);
             this.Controls.Add(this.bookingListe);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.etasjeOversiktTabControl);
             this.Controls.Add(this.gjesteListe);
             this.Controls.Add(this.nameInputBox);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,10 +149,7 @@
         private System.Windows.Forms.TextBox nameInputBox;
         private System.Windows.Forms.ListBox gjesteListe;
         private System.Windows.Forms.ListBox bookingListe;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage2;
-        internal System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        internal System.Windows.Forms.TabControl etasjeOversiktTabControl;
         private System.Windows.Forms.Button leggTilNyGjest;
         private System.Windows.Forms.DateTimePicker innsjekkDatoVelger;
         private System.Windows.Forms.Label innSjekkDatoLabel;

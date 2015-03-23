@@ -16,7 +16,7 @@ namespace Booking
         public Form1()
         {
             InitializeComponent();
-            xh.lesXML(gjesteListe);
+            xh.oppdaterGjesteListeFraXML(gjesteListe);
         }
 
         XmlHåndterer xh = new XmlHåndterer();
@@ -35,7 +35,7 @@ namespace Booking
                    
                     xh.leggTilNyGjest(nameInputBox.Text, _innsjekkDato, _utsjekkDato);
 
-                    xh.lesXML(gjesteListe);
+                    xh.oppdaterGjesteListeFraXML(gjesteListe);
             }
         }
 
