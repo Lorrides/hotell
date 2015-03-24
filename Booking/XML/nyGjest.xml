@@ -9,53 +9,23 @@
 ]> -->
 <gjester>
   <gjest>
-    <gjestenavn>Espen Moe
-Espen Moe</gjestenavn>
+    <gjestenavn>Espen Moe</gjestenavn>
+    <innSjekkDato>03/24/2015</innSjekkDato>
+    <utSjekkDato>03/28/2015</utSjekkDato>
   </gjest>
   <gjest>
     <gjestenavn>Thor-Arne Høiland</gjestenavn>
+    <innSjekkDato>03/25/2015</innSjekkDato>
+    <utSjekkDato>03/29/2015</utSjekkDato>
   </gjest>
   <gjest>
-    <gjestenavn>Geir Grusom</gjestenavn>
+    <gjestenavn>Vladimir Putin</gjestenavn>
+    <innSjekkDato>03/26/2015</innSjekkDato>
+    <utSjekkDato>03/29/2015</utSjekkDato>
   </gjest>
   <gjest>
-    <gjestenavn>Putin Ritz</gjestenavn>
-    <innSjekkDato>0001-01-01T00:00:00</innSjekkDato>
-    <utSjekkDato>0001-01-01T00:00:00</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>Thor Test</gjestenavn>
-    <innSjekkDato>0001-01-01T00:00:00</innSjekkDato>
-    <utSjekkDato>0001-01-01T00:00:00</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>Thor Test</gjestenavn>
-    <innSjekkDato>2015-03-23T12:30:36</innSjekkDato>
-    <utSjekkDato>2015-03-23T12:30:36</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>Smergel Kjøttpølse</gjestenavn>
-    <innSjekkDato>2015-03-12T12:35:43</innSjekkDato>
-    <utSjekkDato>2015-03-29T12:35:43</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>Ali Baba</gjestenavn>
-    <innSjekkDato>08.03.2015</innSjekkDato>
-    <utSjekkDato>15.03.2015</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>Saddam Hussein</gjestenavn>
-    <innSjekkDato>11.03.2015 12:38:36</innSjekkDato>
-    <utSjekkDato>21.03.2015 12:38:36</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>kjdfdfg</gjestenavn>
-    <innSjekkDato>21.03.2015</innSjekkDato>
-    <utSjekkDato>29.03.2015</utSjekkDato>
-  </gjest>
-  <gjest>
-    <gjestenavn>Marakov ko</gjestenavn>
-    <innSjekkDato>02/24/2015</innSjekkDato>
-    <utSjekkDato>03/26/2015</utSjekkDato>
+    <gjestenavn>Olva den Hellige</gjestenavn>
+    <innSjekkDato>03/30/2015</innSjekkDato>
+    <utSjekkDato>04/02/2015</utSjekkDato>
   </gjest>
 </gjester>
