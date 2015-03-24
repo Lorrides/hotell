@@ -34,8 +34,8 @@ namespace Booking
 
         public Rom AddRom()
         {
-            var label = new label();
-            Tab.Content.Add(label);
+            var label = new Label();           
+            Tab.Container.Add(label);
 
             var rom = new Rom(this, ++_romTeller, label) { Opptatt = false };
 
@@ -75,7 +75,7 @@ namespace Booking
     {
         public Etasje Etasje { get; private set; }
         public bool Opptatt { get; set; }
-        public int Nummer { get; }
+        public int Nummer { get; set; }
 
         // private bool _opptatt = false;
         // public bool Opptatt { get { return _opptatt; } set { _opttatt = value; if(value) { Label.BackgroundColor = Color.Red; } else { Label.BackgroundColor = Color.Silver; } }
@@ -135,6 +135,7 @@ namespace Booking
         }
     }
 }
+         
 
 
 
