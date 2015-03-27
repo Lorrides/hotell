@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.nameInputBox = new System.Windows.Forms.TextBox();
             this.gjesteListe = new System.Windows.Forms.ListBox();
             this.bookingListe = new System.Windows.Forms.ListBox();
@@ -37,10 +38,10 @@
             this.innSjekkDatoLabel = new System.Windows.Forms.Label();
             this.utSjekkDatoLabel = new System.Windows.Forms.Label();
             this.utsjekkDatoVelger = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bakgrunnGjesteBestilling = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bakgrunnGjesteBestilling)).BeginInit();
             this.SuspendLayout();
             // 
             // nameInputBox
@@ -53,31 +54,33 @@
             // 
             // gjesteListe
             // 
+            this.gjesteListe.BackColor = System.Drawing.SystemColors.Info;
             this.gjesteListe.FormattingEnabled = true;
             this.gjesteListe.Location = new System.Drawing.Point(13, 193);
             this.gjesteListe.Margin = new System.Windows.Forms.Padding(2);
             this.gjesteListe.Name = "gjesteListe";
-            this.gjesteListe.Size = new System.Drawing.Size(206, 394);
+            this.gjesteListe.Size = new System.Drawing.Size(206, 420);
             this.gjesteListe.TabIndex = 2;
             this.gjesteListe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gjesteListe_MouseDown);
             this.gjesteListe.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gjesteListe_MouseMove);
             // 
             // bookingListe
             // 
+            this.bookingListe.BackColor = System.Drawing.SystemColors.Info;
             this.bookingListe.FormattingEnabled = true;
             this.bookingListe.Location = new System.Drawing.Point(223, 11);
             this.bookingListe.Margin = new System.Windows.Forms.Padding(2);
             this.bookingListe.Name = "bookingListe";
-            this.bookingListe.Size = new System.Drawing.Size(201, 576);
+            this.bookingListe.Size = new System.Drawing.Size(201, 602);
             this.bookingListe.TabIndex = 4;
             // 
             // etasjeOversiktTabControl
             // 
-            this.etasjeOversiktTabControl.Location = new System.Drawing.Point(772, 10);
+            this.etasjeOversiktTabControl.Location = new System.Drawing.Point(428, 10);
             this.etasjeOversiktTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.etasjeOversiktTabControl.Name = "etasjeOversiktTabControl";
             this.etasjeOversiktTabControl.SelectedIndex = 0;
-            this.etasjeOversiktTabControl.Size = new System.Drawing.Size(240, 585);
+            this.etasjeOversiktTabControl.Size = new System.Drawing.Size(584, 603);
             this.etasjeOversiktTabControl.TabIndex = 3;
             // 
             // leggTilNyGjest
@@ -131,22 +134,24 @@
             this.utsjekkDatoVelger.TabIndex = 11;
             this.utsjekkDatoVelger.ValueChanged += new System.EventHandler(this.utsjekkDatoVelger_ValueChanged);
             // 
-            // pictureBox1
+            // bakgrunnGjesteBestilling
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 177);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.bakgrunnGjesteBestilling.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bakgrunnGjesteBestilling.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bakgrunnGjesteBestilling.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bakgrunnGjesteBestilling.Location = new System.Drawing.Point(12, 12);
+            this.bakgrunnGjesteBestilling.Name = "bakgrunnGjesteBestilling";
+            this.bakgrunnGjesteBestilling.Size = new System.Drawing.Size(206, 177);
+            this.bakgrunnGjesteBestilling.TabIndex = 12;
+            this.bakgrunnGjesteBestilling.TabStop = false;
             // 
             // listBox1
             // 
             this.listBox1.AllowDrop = true;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(536, 44);
+            this.listBox1.Location = new System.Drawing.Point(259, 279);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(202, 95);
+            this.listBox1.Size = new System.Drawing.Size(130, 95);
             this.listBox1.TabIndex = 13;
             this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
             this.listBox1.DragOver += new System.Windows.Forms.DragEventHandler(this.listBox1_DragOver);
@@ -155,7 +160,7 @@
             // 
             this.label1.AllowDrop = true;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(551, 215);
+            this.label1.Location = new System.Drawing.Point(305, 377);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 14;
@@ -167,7 +172,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 606);
+            this.BackColor = System.Drawing.Color.BurlyWood;
+            this.BackgroundImage = global::Booking.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1023, 628);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.utsjekkDatoVelger);
@@ -179,11 +187,13 @@
             this.Controls.Add(this.etasjeOversiktTabControl);
             this.Controls.Add(this.gjesteListe);
             this.Controls.Add(this.nameInputBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bakgrunnGjesteBestilling);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bakgrunnGjesteBestilling)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +210,7 @@
         private System.Windows.Forms.Label innSjekkDatoLabel;
         private System.Windows.Forms.Label utSjekkDatoLabel;
         private System.Windows.Forms.DateTimePicker utsjekkDatoVelger;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox bakgrunnGjesteBestilling;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
     }
