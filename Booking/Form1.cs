@@ -26,16 +26,16 @@ namespace Booking
             int antallRomPerEtasje = 14;
             
             for(int i = 0; i < antallEtasjer; i++)
-            {
-               
+            {              
                 etasjeOversiktTabControl.TabPages.Add((i+1).ToString());
-                foreach (TabPage tab in etasjeOversiktTabControl.TabPages)
+                /*foreach (TabPage tab in etasjeOversiktTabControl.TabPages)
                 {
-
                     Etasje etasje = new Etasje(i, tab);
                     etasje.AddRom();
-                }
-            }            
+                }*/
+            }
+
+            
 
         }
 
