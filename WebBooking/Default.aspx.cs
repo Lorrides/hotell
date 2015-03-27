@@ -26,7 +26,7 @@ namespace WebBooking
 
         protected void Calendar2_SelectionChanged(object sender, EventArgs e)
         {
-            utsjekkDato = Calendar1.SelectedDate;
+            utsjekkDato = Calendar2.SelectedDate;
         }
 
         protected void GodkjennKnapp_Click(object sender, EventArgs e)
