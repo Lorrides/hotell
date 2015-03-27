@@ -28,4 +28,9 @@
     <innSjekkDato>03/30/2015</innSjekkDato>
     <utSjekkDato>04/02/2015</utSjekkDato>
   </gjest>
+  <gjest>
+    <gjestenavn>Gjesterson</gjestenavn>
+    <innSjekkDato>01.01.0001</innSjekkDato>
+    <utSjekkDato>01.01.0001</utSjekkDato>
+  </gjest>
 </gjester>

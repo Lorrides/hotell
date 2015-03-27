@@ -38,6 +38,8 @@
             this.utSjekkDatoLabel = new System.Windows.Forms.Label();
             this.utsjekkDatoVelger = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +59,8 @@
             this.gjesteListe.Name = "gjesteListe";
             this.gjesteListe.Size = new System.Drawing.Size(206, 394);
             this.gjesteListe.TabIndex = 2;
+            this.gjesteListe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gjesteListe_MouseDown);
+            this.gjesteListe.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gjesteListe_MouseMove);
             // 
             // bookingListe
             // 
@@ -69,11 +73,11 @@
             // 
             // etasjeOversiktTabControl
             // 
-            this.etasjeOversiktTabControl.Location = new System.Drawing.Point(428, 10);
+            this.etasjeOversiktTabControl.Location = new System.Drawing.Point(772, 10);
             this.etasjeOversiktTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.etasjeOversiktTabControl.Name = "etasjeOversiktTabControl";
             this.etasjeOversiktTabControl.SelectedIndex = 0;
-            this.etasjeOversiktTabControl.Size = new System.Drawing.Size(584, 585);
+            this.etasjeOversiktTabControl.Size = new System.Drawing.Size(240, 585);
             this.etasjeOversiktTabControl.TabIndex = 3;
             // 
             // leggTilNyGjest
@@ -88,6 +92,7 @@
             // 
             // innsjekkDatoVelger
             // 
+            this.innsjekkDatoVelger.CalendarMonthBackground = System.Drawing.Color.Tan;
             this.innsjekkDatoVelger.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.innsjekkDatoVelger.Location = new System.Drawing.Point(55, 71);
             this.innsjekkDatoVelger.Name = "innsjekkDatoVelger";
@@ -135,11 +140,36 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // listBox1
+            // 
+            this.listBox1.AllowDrop = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(536, 44);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(202, 95);
+            this.listBox1.TabIndex = 13;
+            this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
+            this.listBox1.DragOver += new System.Windows.Forms.DragEventHandler(this.listBox1_DragOver);
+            // 
+            // label1
+            // 
+            this.label1.AllowDrop = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(551, 215);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "navn her";
+            this.label1.DragDrop += new System.Windows.Forms.DragEventHandler(this.label1_DragDrop);
+            this.label1.DragOver += new System.Windows.Forms.DragEventHandler(this.label1_DragOver);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 606);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.utsjekkDatoVelger);
             this.Controls.Add(this.utSjekkDatoLabel);
             this.Controls.Add(this.innSjekkDatoLabel);
@@ -171,6 +201,8 @@
         private System.Windows.Forms.Label utSjekkDatoLabel;
         private System.Windows.Forms.DateTimePicker utsjekkDatoVelger;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

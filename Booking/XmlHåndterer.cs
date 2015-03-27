@@ -14,13 +14,13 @@ namespace Booking
         {
             try
             {
-                XDocument doc = XDocument.Load("../../XML/nyGjest.XML");
+                XDocument doc = XDocument.Load("../../../Documents/Visual Studio 2013/Projects/hotell/Booking/XML/nyGjest.XML");
                 doc.Root.Add(
                     new XElement("gjest",
                     new XElement("gjestenavn", gjesteNavn),
                     new XElement("innSjekkDato", innsjekkDato.ToShortDateString()),
                     new XElement("utSjekkDato", utsjekkDato.ToShortDateString())));
-                doc.Save("../../XML/nyGjest.XML");               
+                doc.Save("../../../Documents/Visual Studio 2013/Projects/hotell/Booking/XML/nyGjest.XML");               
             }
             catch (Exception f)
             {
