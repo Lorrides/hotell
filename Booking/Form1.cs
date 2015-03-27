@@ -17,11 +17,26 @@ namespace Booking
         {
             InitializeComponent();
             xh.oppdaterGjesteListeFraXML(gjesteListe);
+
+            int antallEtasjer = 3;
+            int antallRomPerEtasje = 14;
+            
+            for(int i = 0; i < antallEtasjer; i++)
+            {
+               
+                etasjeOversiktTabControl.TabPages.Add((i+1).ToString());
+                foreach (TabPage tab in etasjeOversiktTabControl.TabPages)
+                {
+                    Etasje etasje = new Etasje(i, tab);
+                }
+            }            
         }
 
         XmlHåndterer xh = new XmlHåndterer();
         private DateTime _innsjekkDato;
         private DateTime _utsjekkDato;
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
