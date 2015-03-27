@@ -41,12 +41,14 @@
             this.bakgrunnGjesteBestilling = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.navnPåGjestLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bakgrunnGjesteBestilling)).BeginInit();
             this.SuspendLayout();
             // 
             // nameInputBox
             // 
-            this.nameInputBox.Location = new System.Drawing.Point(38, 22);
+            this.nameInputBox.Location = new System.Drawing.Point(43, 77);
             this.nameInputBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameInputBox.Name = "nameInputBox";
             this.nameInputBox.Size = new System.Drawing.Size(143, 20);
@@ -56,10 +58,10 @@
             // 
             this.gjesteListe.BackColor = System.Drawing.SystemColors.Info;
             this.gjesteListe.FormattingEnabled = true;
-            this.gjesteListe.Location = new System.Drawing.Point(13, 193);
+            this.gjesteListe.Location = new System.Drawing.Point(13, 245);
             this.gjesteListe.Margin = new System.Windows.Forms.Padding(2);
             this.gjesteListe.Name = "gjesteListe";
-            this.gjesteListe.Size = new System.Drawing.Size(206, 420);
+            this.gjesteListe.Size = new System.Drawing.Size(206, 368);
             this.gjesteListe.TabIndex = 2;
             this.gjesteListe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gjesteListe_MouseDown);
             this.gjesteListe.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gjesteListe_MouseMove);
@@ -85,7 +87,7 @@
             // 
             // leggTilNyGjest
             // 
-            this.leggTilNyGjest.Location = new System.Drawing.Point(38, 147);
+            this.leggTilNyGjest.Location = new System.Drawing.Point(45, 202);
             this.leggTilNyGjest.Name = "leggTilNyGjest";
             this.leggTilNyGjest.Size = new System.Drawing.Size(143, 29);
             this.leggTilNyGjest.TabIndex = 7;
@@ -97,7 +99,7 @@
             // 
             this.innsjekkDatoVelger.CalendarMonthBackground = System.Drawing.Color.Tan;
             this.innsjekkDatoVelger.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.innsjekkDatoVelger.Location = new System.Drawing.Point(55, 71);
+            this.innsjekkDatoVelger.Location = new System.Drawing.Point(66, 126);
             this.innsjekkDatoVelger.Name = "innsjekkDatoVelger";
             this.innsjekkDatoVelger.Size = new System.Drawing.Size(98, 20);
             this.innsjekkDatoVelger.TabIndex = 8;
@@ -108,7 +110,7 @@
             this.innSjekkDatoLabel.AutoSize = true;
             this.innSjekkDatoLabel.BackColor = System.Drawing.Color.LightSkyBlue;
             this.innSjekkDatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.innSjekkDatoLabel.Location = new System.Drawing.Point(34, 44);
+            this.innSjekkDatoLabel.Location = new System.Drawing.Point(41, 99);
             this.innSjekkDatoLabel.Name = "innSjekkDatoLabel";
             this.innSjekkDatoLabel.Size = new System.Drawing.Size(154, 24);
             this.innSjekkDatoLabel.TabIndex = 9;
@@ -119,7 +121,7 @@
             this.utSjekkDatoLabel.AutoSize = true;
             this.utSjekkDatoLabel.BackColor = System.Drawing.Color.LightSkyBlue;
             this.utSjekkDatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utSjekkDatoLabel.Location = new System.Drawing.Point(34, 94);
+            this.utSjekkDatoLabel.Location = new System.Drawing.Point(41, 149);
             this.utSjekkDatoLabel.Name = "utSjekkDatoLabel";
             this.utSjekkDatoLabel.Size = new System.Drawing.Size(145, 24);
             this.utSjekkDatoLabel.TabIndex = 10;
@@ -128,7 +130,7 @@
             // utsjekkDatoVelger
             // 
             this.utsjekkDatoVelger.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.utsjekkDatoVelger.Location = new System.Drawing.Point(55, 121);
+            this.utsjekkDatoVelger.Location = new System.Drawing.Point(66, 176);
             this.utsjekkDatoVelger.Name = "utsjekkDatoVelger";
             this.utsjekkDatoVelger.Size = new System.Drawing.Size(98, 20);
             this.utsjekkDatoVelger.TabIndex = 11;
@@ -139,9 +141,9 @@
             this.bakgrunnGjesteBestilling.BackColor = System.Drawing.Color.LightSkyBlue;
             this.bakgrunnGjesteBestilling.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bakgrunnGjesteBestilling.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bakgrunnGjesteBestilling.Location = new System.Drawing.Point(12, 12);
+            this.bakgrunnGjesteBestilling.Location = new System.Drawing.Point(13, 45);
             this.bakgrunnGjesteBestilling.Name = "bakgrunnGjesteBestilling";
-            this.bakgrunnGjesteBestilling.Size = new System.Drawing.Size(206, 177);
+            this.bakgrunnGjesteBestilling.Size = new System.Drawing.Size(206, 195);
             this.bakgrunnGjesteBestilling.TabIndex = 12;
             this.bakgrunnGjesteBestilling.TabStop = false;
             // 
@@ -168,6 +170,28 @@
             this.label1.DragDrop += new System.Windows.Forms.DragEventHandler(this.label1_DragDrop);
             this.label1.DragOver += new System.Windows.Forms.DragEventHandler(this.label1_DragOver);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Info;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 33);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "H.O.O.K.E.R";
+            // 
+            // navnPåGjestLabel
+            // 
+            this.navnPåGjestLabel.AutoSize = true;
+            this.navnPåGjestLabel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.navnPåGjestLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navnPåGjestLabel.Location = new System.Drawing.Point(41, 51);
+            this.navnPåGjestLabel.Name = "navnPåGjestLabel";
+            this.navnPåGjestLabel.Size = new System.Drawing.Size(129, 24);
+            this.navnPåGjestLabel.TabIndex = 16;
+            this.navnPåGjestLabel.Text = "Navn på gjest:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +200,8 @@
             this.BackgroundImage = global::Booking.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1023, 628);
+            this.Controls.Add(this.navnPåGjestLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.utsjekkDatoVelger);
@@ -192,7 +218,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hotell for orginale kristene erke rivaler";
             ((System.ComponentModel.ISupportInitialize)(this.bakgrunnGjesteBestilling)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -213,6 +239,8 @@
         private System.Windows.Forms.PictureBox bakgrunnGjesteBestilling;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label navnPåGjestLabel;
     }
 }
 
