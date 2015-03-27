@@ -17,10 +17,10 @@ namespace Booking
         {
             InitializeComponent();
             xh.oppdaterGjesteListeFraXML(gjesteListe);
-<<<<<<< HEAD
+
             innsjekkDatoVelger.MinDate = DateTime.Now;
             utsjekkDatoVelger.MinDate = DateTime.Now;
-=======
+
 
             int antallEtasjer = 3;
             int antallRomPerEtasje = 14;
@@ -31,20 +31,19 @@ namespace Booking
                 etasjeOversiktTabControl.TabPages.Add((i+1).ToString());
                 foreach (TabPage tab in etasjeOversiktTabControl.TabPages)
                 {
+
                     Etasje etasje = new Etasje(i, tab);
+                    etasje.AddRom();
                 }
             }            
->>>>>>> 77f531466fe3fe328a74281f66d0e65762ae2d1e
+
         }
 
         XmlHåndterer xh = new XmlHåndterer();
         private DateTime _innsjekkDato;
         private DateTime _utsjekkDato;
 
-<<<<<<< HEAD
-=======
-        
->>>>>>> 77f531466fe3fe328a74281f66d0e65762ae2d1e
+
 
         private void button1_Click(object sender, EventArgs e)
         {
