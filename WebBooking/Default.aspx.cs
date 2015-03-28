@@ -16,7 +16,6 @@ namespace WebBooking
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
@@ -35,6 +34,24 @@ namespace WebBooking
             XmlHåndterer xh = new XmlHåndterer();
 
             xh.leggTilNyGjest(gjesteNavn, innsjekkDato, utsjekkDato);
+        }
+
+        protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
+        {
+            if (e.Day.Date < DateTime.Today)
+            {
+                e.Day.IsSelectable = false;
+                e.Cell.Enabled = false;
+            }
+        }
+
+        protected void Calendar2_DayRender(object sender, DayRenderEventArgs e)
+        {
+            if (e.Day.Date < DateTime.Now)
+            {
+                e.Day.IsSelectable = false;
+                e.Cell.Enabled = false;
+            }
         }
     }
 }
