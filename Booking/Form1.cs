@@ -19,8 +19,8 @@ namespace Booking
             InitializeComponent();
             xh.oppdaterGjesteListeFraXML(gjesteListe);
 
-            innsjekkDatoVelger.MinDate = DateTime.Now;
-            utsjekkDatoVelger.MinDate = DateTime.Now;
+            innsjekkDatoVelger.MinDate = DateTime.Today;
+            utsjekkDatoVelger.MinDate = DateTime.Today.AddDays (1);
 
 
             int antallEtasjer = 3;
