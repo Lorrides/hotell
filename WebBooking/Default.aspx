@@ -8,14 +8,17 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="header">
-    
+    <div id="header">  
+        <h2>Bestill rom under:</h2>
     </div>
         
     <div id="userInput">
         
         <asp:Label ID="NavnLabel" runat="server" Text="Navn"></asp:Label><br/>       
-        <asp:TextBox ID="NavnInputTextBox" runat="server"></asp:TextBox><br/>
+        <asp:TextBox ID="NavnInputTextBox" runat="server"></asp:TextBox>
+        <br />
+        <asp:RequiredFieldValidator ID="ValidatorForNavn" runat="server" ControlToValidate="NavnInputTextBox" ErrorMessage="Du må skrive inn et navn" SetFocusOnError="True"></asp:RequiredFieldValidator>
+        <br/>
         <br/>
         <asp:Label ID="InnsjekkDatoLabel" runat="server" Text="Innsjekkdato"></asp:Label><br/>
         <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar1_DayRender" Width="350px">
