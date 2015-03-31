@@ -5,14 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
-    <title>Hotell for orginale kristene erke rivaler</title>
+    <title>H.O.O.K.E.R</title>
+
 </head>
-<body>
+<body id ="wrapper">
     <form id="form1" runat="server">
-    <div id="header">  
-        <h2>Bestill rom under:</h2>
+    <div id ="banner">
+        <img src ="Resources/hotellTopLogoWeb.png"/>
+        <h2>Hotell for orginale kristne erkerivaler </h2>
     </div>
-        
+
+    <div id="header">  
+        <h1>Bestill rom under:</h1>
+    </div>
+
     <div id="navnInput">
         <asp:Label ID="NavnLabel" runat="server" Text="Navn"></asp:Label><br/>       
         <asp:TextBox ID="NavnInputTextBox" runat="server"></asp:TextBox><br/><br/>
@@ -45,6 +51,7 @@
     <div id = "godkjennKnapp">
         <asp:Button ID="GodkjennKnapp" runat="server" Text="Godkjenn" OnClick="GodkjennKnapp_Click" />
     </div>
+
     </form>
 </body>
 </html>

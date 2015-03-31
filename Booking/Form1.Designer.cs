@@ -219,7 +219,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Hotell for orginale kristene erke rivaler";
+            this.Text = "Hotell for orginale kristne erkerivaler";
             ((System.ComponentModel.ISupportInitialize)(this.bakgrunnGjesteBestilling)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
