@@ -24,7 +24,8 @@ namespace Booking
 
         public Etasje AddEtasje()
         {
-            TabPage tab = null; // opprett tab her
+            TabPage tab = new TabPage(); // opprett tab her
+            _tab.TabPages.Add(tab);
             var etasje = new Etasje(++_etasjeTeller, tab);
 
             _etasjer.Add(etasje);

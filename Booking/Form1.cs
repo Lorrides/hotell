@@ -25,13 +25,15 @@ namespace Booking
             int antallEtasjer = 3;
             int antallRomPerEtasje = 14;
             
-            for(int i = 0; i < antallEtasjer; i++)
-            {              
-                etasjeOversiktTabControl.TabPages.Add((i+1).ToString());
+            Hotell hotell = new Hotell(etasjeOversiktTabControl);
+
+            for (int i = 0; i < antallEtasjer; i++)
+            {
+                
                
             }
 
-            
+
 
         }
 
