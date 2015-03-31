@@ -9,23 +9,23 @@ namespace Booking
 {
     public class Hotell : IEnumerable<Etasje>   // IEnumerable gjør at foreach og LINQ funker på objektet. Den vil nå kunne returnere en liste av etasjer
     {
-        private readonly TabControl _tab;
+        private readonly TabControl _tabControl;
         private readonly List<Etasje> _etasjer;
         private int _etasjeTeller = 0;
 
-        public TabControl Tab { get { return _tab; } }
+        public TabControl Tab { get { return _tabControl; } }
 
-        public Hotell(TabControl tab)
+        public Hotell(TabControl tabControl)
         {
-            _tab = tab;
+            _tabControl = tabControl;
             _etasjer = new List<Etasje>();
-            _tab = tab;
+            _tabControl = tabControl;
         }
 
         public Etasje AddEtasje()
         {
             TabPage tab = new TabPage(); // opprett tab her
-            _tab.TabPages.Add(tab);
+            _tabControl.TabPages.Add(string.Format("Etasje {0}", _etasjeTeller));
             var etasje = new Etasje(++_etasjeTeller, tab);
 
             _etasjer.Add(etasje);
