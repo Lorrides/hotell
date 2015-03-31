@@ -18,19 +18,19 @@ namespace WebBooking
         {
         }
 
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
-        {
-            innsjekkDato = Calendar1.SelectedDate;
+        public void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {        
         }
 
-        protected void Calendar2_SelectionChanged(object sender, EventArgs e)
-        {
-            utsjekkDato = Calendar2.SelectedDate;
+        public void Calendar2_SelectionChanged(object sender, EventArgs e)
+        {      
         }
 
         protected void GodkjennKnapp_Click(object sender, EventArgs e)
         {
             gjesteNavn = NavnInputTextBox.Text;
+            innsjekkDato = Calendar1.SelectedDate;
+            utsjekkDato = Calendar2.SelectedDate;
             XmlHåndterer xh = new XmlHåndterer();
 
             xh.leggTilNyGjest(gjesteNavn, innsjekkDato, utsjekkDato);

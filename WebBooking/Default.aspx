@@ -16,8 +16,6 @@
         
         <asp:Label ID="NavnLabel" runat="server" Text="Navn"></asp:Label><br/>       
         <asp:TextBox ID="NavnInputTextBox" runat="server"></asp:TextBox>
-        <br />
-        <asp:RequiredFieldValidator ID="ValidatorForNavn" runat="server" ControlToValidate="NavnInputTextBox" ErrorMessage="Du må skrive inn et navn" SetFocusOnError="True"></asp:RequiredFieldValidator>
         <br/>
         <br/>
         <asp:Label ID="InnsjekkDatoLabel" runat="server" Text="Innsjekkdato"></asp:Label><br/>
