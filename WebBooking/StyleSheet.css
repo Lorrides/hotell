@@ -1,2 +1,9 @@
-﻿body {
+﻿
+
+body {
+    background-color: lightblue;
+}
+
+.innsjekkDato {
+    background-color: black;
 }

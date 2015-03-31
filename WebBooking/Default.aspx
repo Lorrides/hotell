@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+    <title>Hotell for orginale kristene erke rivaler</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -12,12 +13,12 @@
         <h2>Bestill rom under:</h2>
     </div>
         
-    <div id="userInput">
-        
+    <div id="navnInput">
         <asp:Label ID="NavnLabel" runat="server" Text="Navn"></asp:Label><br/>       
-        <asp:TextBox ID="NavnInputTextBox" runat="server"></asp:TextBox>
-        <br/>
-        <br/>
+        <asp:TextBox ID="NavnInputTextBox" runat="server"></asp:TextBox><br/><br/>
+    </div>
+
+    <div id ="innsjekkDato">
         <asp:Label ID="InnsjekkDatoLabel" runat="server" Text="Innsjekkdato"></asp:Label><br/>
         <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar1_DayRender" Width="350px">
             <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -27,6 +28,9 @@
             <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
             <TodayDayStyle BackColor="#CCCCCC" />
         </asp:Calendar>
+    </div>
+
+    <div id ="utsjekkDato">
         <asp:Label ID="UtsjekkDatoLabel" runat="server" Text="Utsjekkdato"></asp:Label><br/>
         <asp:Calendar ID="Calendar2" runat="server" OnSelectionChanged="Calendar2_SelectionChanged" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnDayRender="Calendar2_DayRender" Width="350px">
             <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -36,11 +40,11 @@
             <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
             <TodayDayStyle BackColor="#CCCCCC" />
         </asp:Calendar>
-        
-   
-        
     </div>
+
+    <div id = "godkjennKnapp">
         <asp:Button ID="GodkjennKnapp" runat="server" Text="Godkjenn" OnClick="GodkjennKnapp_Click" />
+    </div>
     </form>
 </body>
 </html>

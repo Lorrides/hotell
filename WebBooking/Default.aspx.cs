@@ -34,6 +34,7 @@ namespace WebBooking
             XmlHåndterer xh = new XmlHåndterer();
 
             xh.leggTilNyGjest(gjesteNavn, innsjekkDato, utsjekkDato);
+           
         }
 
         protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)

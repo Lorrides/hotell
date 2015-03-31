@@ -57,6 +57,7 @@
             // gjesteListe
             // 
             this.gjesteListe.BackColor = System.Drawing.SystemColors.Info;
+            this.gjesteListe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gjesteListe.FormattingEnabled = true;
             this.gjesteListe.Location = new System.Drawing.Point(13, 245);
             this.gjesteListe.Margin = new System.Windows.Forms.Padding(2);
@@ -214,7 +215,7 @@
             this.Controls.Add(this.gjesteListe);
             this.Controls.Add(this.nameInputBox);
             this.Controls.Add(this.bakgrunnGjesteBestilling);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";

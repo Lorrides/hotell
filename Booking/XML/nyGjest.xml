@@ -33,4 +33,14 @@
     <innSjekkDato>01.01.0001</innSjekkDato>
     <utSjekkDato>01.01.0001</utSjekkDato>
   </gjest>
+  <gjest>
+    <gjestenavn></gjestenavn>
+    <innSjekkDato>01.01.0001</innSjekkDato>
+    <utSjekkDato>01.01.0001</utSjekkDato>
+  </gjest>
+  <gjest>
+    <gjestenavn>Jackon MC</gjestenavn>
+    <innSjekkDato>31.03.2015</innSjekkDato>
+    <utSjekkDato>02.04.2015</utSjekkDato>
+  </gjest>
 </gjester>
