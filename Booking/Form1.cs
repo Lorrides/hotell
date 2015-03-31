@@ -29,8 +29,8 @@ namespace Booking
 
             for (int i = 0; i < antallEtasjer; i++)
             {
-                
-               
+                hotell.AddEtasje();
+
             }
 
 
