@@ -10,7 +10,7 @@ namespace Booking
     public class Hotell : IEnumerable<Etasje>   // IEnumerable gjør at foreach og LINQ funker på objektet. Den vil nå kunne returnere en liste av etasjer
     {
         private readonly TabControl _tabControl;
-        private readonly List<Etasje> _etasjer;
+        public readonly List<Etasje> _etasjer;
         private int _etasjeTeller = 0;
 
         public TabControl Tab { get { return _tabControl; } }

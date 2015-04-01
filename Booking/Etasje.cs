@@ -29,7 +29,7 @@ namespace Booking
         public Rom AddRom()
         {
             var label = new Label();
-            Tab.Container.Add(label);
+            Tab.Controls.Add(label);
 
             var rom = new Rom(this, ++_romTeller, label) { Opptatt = false };
 
