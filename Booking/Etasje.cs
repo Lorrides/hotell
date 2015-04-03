@@ -22,6 +22,8 @@ namespace Booking
             Nummer = etasjeNummer;
 
             Tab = tabPage;
+
+            Tab.Controls.Add(new FlowLayoutPanel());
         }
 
         private int _romTeller = 0;
@@ -29,7 +31,7 @@ namespace Booking
         public Rom AddRom()
         {
             var label = new Label();
-            Tab.Controls.Add(label);
+            Tab.Controls.Add(label);          
 
             var rom = new Rom(this, ++_romTeller, label) { Opptatt = false };
 
