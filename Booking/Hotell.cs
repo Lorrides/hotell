@@ -24,6 +24,11 @@ namespace Booking
         public Etasje AddEtasje()
         {
             TabPage tabPage = new TabPage(); // opprett tab her
+            FlowLayoutPanel layout = new FlowLayoutPanel(); // opprett layout-panelet
+            tabPage.Controls.Add(layout); // legg FlowLayoutPanel til tab
+
+            Button TestKnapp = new Button() { Width = 50, Height = 50 };
+           
             _tabControl.TabPages.Add(string.Format("Etasje {0}", _etasjeTeller));
             
             var etasje = new Etasje(++_etasjeTeller, tabPage);
