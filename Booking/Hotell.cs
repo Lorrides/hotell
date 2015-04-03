@@ -19,7 +19,6 @@ namespace Booking
         {
             _tabControl = tabControl;
             _etasjer = new List<Etasje>();
-            _tabControl = tabControl;
         }
 
         public Etasje AddEtasje()

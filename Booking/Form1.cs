@@ -30,16 +30,16 @@ namespace Booking
             for (int i = 0; i < antallEtasjer; i++)
             {
                 hotell.AddEtasje();
+                System.Console.WriteLine("La til etasje " +i);
             }
 
             foreach (Etasje etasje in hotell._etasjer)
-            {
+            {            
                 for (int i = 0; i < antallRomPerEtasje; i++)
                 {
                     etasje.AddRom();
                     System.Console.WriteLine("La til rom " +i);
-                }
-                    
+                }                  
             }
 
 
