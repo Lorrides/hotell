@@ -29,16 +29,18 @@ namespace Booking
 
             for (int i = 0; i < antallEtasjer; i++)
             {
-                hotell.AddEtasje();               
+                hotell.AddEtasje();
+                etasjeOversiktTabControl.TabPages[i].Controls.Add(new FlowLayoutPanel());
             }
 
             foreach (Etasje etasje in hotell._etasjer)
-            {                
+            {               
                 for (int i = 0; i < antallRomPerEtasje; i++)
                 {
-                    etasje.AddRom();                    
+                    etasje.AddRom(); 
+                   
                 }                  
-            }
+            }           
         }
 
         XmlHåndterer xh = new XmlHåndterer();
