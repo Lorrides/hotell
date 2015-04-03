@@ -30,15 +30,16 @@ namespace Booking
             for (int i = 0; i < antallEtasjer; i++)
             {
                 hotell.AddEtasje();
-                etasjeOversiktTabControl.TabPages[i].Controls.Add(new FlowLayoutPanel());
+                etasjeOversiktTabControl.TabPages[i].Controls.Add(new Button() { Text = "Jøss" });
+                etasjeOversiktTabControl.TabPages[i].Controls.Add(new FlowLayoutPanel());              
             }
 
             foreach (Etasje etasje in hotell._etasjer)
-            {               
+            {
                 for (int i = 0; i < antallRomPerEtasje; i++)
-                {
-                    etasje.AddRom(); 
-                   
+                {                            
+                    etasje.AddRom();
+                    //(etasjeOversiktTabControl.TabPages[i].Controls[0] as FlowLayoutPanel).Controls.Add(new Label());
                 }                  
             }           
         }

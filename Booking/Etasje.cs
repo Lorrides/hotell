@@ -36,7 +36,6 @@ namespace Booking
 
             _rom.Add(rom);
             Console.WriteLine("Addet rom: " +Nummer.ToString() +" "+_romTeller.ToString());
-
             return rom;
         }
 
