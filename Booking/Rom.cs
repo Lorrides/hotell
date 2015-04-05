@@ -29,11 +29,9 @@ namespace Booking
             // nå har du en referanse til labelen som er blitt opprettet og du kan endre egenskaper på den om man endrer status på rommet uten at det direkte henger sammen med UI
         }
 
-
         public override string ToString()
         {
             return string.Concat(Etasje.Nummer, RomNummer.ToString().PadLeft(3, '0'));
         }
-
     }
 }
